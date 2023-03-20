@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>HomePage</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20230320220352">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+			</div>
+		</header>
+		<main class="page">
+			<section class="page__checkout checkout">
+				<div class="checkout__container">
+					<div class="checkout__header">
+						<h1 class="checkout__title">Checkout</h1>
+						<div class="checkout__sub-title">
+							<p>There are 3 products in your cart</p>
+						</div>
+					</div>
+					<div class="checkout__billing-details billing-details">
+						<div class="billing-details__title">
+							<h2>Billing Details</h2>
+						</div>
+						<form class="billing-details__form form-billing-details" action="#" method="POST">
+							<div class="form-billing-details__wrapper">
+								<div class="form-billing-details__body">
+									<div class="form-billing-details__first-name form-billing-details-style-global">
+										<input id="first-name-1" autocomplete="off" required type="text" name="first-name-1">
+										<label for="first-name-1">First name*</label>
+									</div>
+									<div class="form-billing-details__last-name form-billing-details-style-global">
+										<input id="last-name-1" autocomplete="off" required type="text" name="last-name-1">
+										<label for="last-name-1">Last name*</label>
+									</div>
+									<div class="form-billing-details__address form-billing-details-style-global">
+										<input id="address-1" autocomplete="off" required type="text" name="address-1">
+										<label for="address-1">Address*</label>
+									</div>
+									<div class="form-billing-details__address-line-1 form-billing-details-style-global">
+										<input id="address-line-1" autocomplete="off" type="text" name="address-line-1">
+										<label for="address-line-1">Address line-2</label>
+									</div>
+									<div class="form-billing-details__country form-billing-details-style-global">
+										<input id="country-1" autocomplete="off" required type="text" name="country-1">
+										<label for="country-1">Country*</label>
+									</div>
+									<div class="form-billing-details__city form-billing-details-style-global">
+										<input id="city-1" autocomplete="off" required type="text" name="city-1">
+										<label for="city-1">City/Town*</label>
+									</div>
+									<div class="form-billing-details__postcode form-billing-details-style-global">
+										<input id="postcode-1" autocomplete="off" required type="text" name="postcode-1">
+										<label for="postcode-1">Postcode / ZIP*</label>
+									</div>
+									<div class="form-billing-details__phone form-billing-details-style-global">
+										<input id="phone-1" autocomplete="off" required type="tel" name="phone-1">
+										<label for="phone-1">Phone*</label>
+									</div>
+									<div class="form-billing-details__postcode form-billing-details-style-global">
+										<input id="postcode-2" autocomplete="off" required type="text" name="postcode-2">
+										<label for="postcode-2">Postcode / ZIP*</label>
+									</div>
+									<div class="form-billing-details__phone form-billing-details-style-global">
+										<input id="phone-2" autocomplete="off" required type="tel" name="phone-2">
+										<label for="phone-2">Phone*</label>
+									</div>
+								</div>
+								<div class="form-billing-details__additional-information">
+									<textarea id="additional-information" name="additional-information"></textarea>
+									<label for="additional-information">Additional information</label>
+								</div>
+								<div class="form-billing-details__create-account-chek-box create-account-chek-box">
+									<div class="create-account-chek-box__top create-account-chek-box-body">
+										<input type="checkbox" id="create-account-1" name="create-account-1" checked>
+										<label for="create-account-1">Create Account</label>
+									</div>
+									<div class="create-account-chek-box__bottom create-account-chek-box-body">
+										<input type="checkbox" id="different-address-1" name="different-address-1">
+										<label for="different-address-1">Ship to a different address?</label>
+									</div>
+								</div>
+
+							</div>
+							<div class="form-billing-details__end apply-coupon">
+								<h2 class="apply-coupon__title">Apply Coupon to get discount!</h2>
+								<div class="apply-coupon__body">
+									<input type="text" required name="coupon-1" id="coupon-1">
+									<label for="coupon-1">Coupon code</label>
+									<div class="apply-coupon__button">
+										<button type="submit">Apply Code</button>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+			<section class="page__shipping-address shipping-address">
+				<div class="shipping-address__container">
+					<div class="shipping-address__header">
+						<h2 class="shipping-address__title">Shipping Address</h2>
+					</div>
+					<form class="shipping-address__login-user login-user" action="#" method="POST">
+						<div class="login-user__wrapper">
+							<div class="login-user__body">
+								<div class="login-user__email login-user-global-style">
+									<label for="email-2">Email Address <span>*</span></label>
+									<input type="email" name="email-2" id="email-2">
+								</div>
+								<div class="login-user__password login-user-global-style">
+									<label for="password-2">Password</label>
+									<input type="password" name="password-2" id="password-2">
+								</div>
+								<div class="login-user__postal-code login-user-global-style">
+									<label for="postal-code-2">Zip/Postal Code</label>
+									<input type="postal-code-2" name="postal-code-2" id="postal-code-2">
+								</div>
+							</div>
+						</div>
+						<div class="login-user__end user-button">
+							<button type="submit" class="user-button__button button">login</button>
+							<div class="user-button__forgot-password">
+								<a href="#">Forgot Your Password?</a>
+							</div>
+						</div>
+					</form>
+				</div>
+			</section>
+			<section class="page__address-register address-register">
+				<div class="address-register__container">
+					<form class="address-register login-user" action="#" method="POST">
+						<div class="login-user__wrapper">
+							<div class="login-user__body">
+								<div class="login-user__first-name-3 login-user-global-style">
+									<label for="first-name-3">First Name <span>*</span></label>
+									<input type="first-name-3" required name="first-name-3" id="first-name-3">
+								</div>
+								<div class="login-user__last-name-3 login-user-global-style">
+									<label for="last-name-3">Last Name <span>*</span></label>
+									<input type="last-name-3" required name="last-name-3" id="last-name-3">
+								</div>
+								<div class="login-user__company-3 login-user-global-style">
+									<label for="company-3">Company</label>
+									<input type="company-3" name="postal-code-2" id="postal-code-2">
+								</div>
+								<div class="login-user__street-address-3 login-user-global-style">
+									<label for="street-address-3">Street Address <span>*</span></label>
+									<div class="login-user__culon-input">
+										<input type="street-address-3" required name="street-address-3" id="street-address-3">
+										<input type="street-address-3" required name="street-address-3" id="street-address-3">
+										<input type="street-address-3" required  name="street-address-3" id="street-address-3">
+									</div>
+								</div>
+								<div class="login-user__country login-user-global-style">
+									<label for="country-3">Country <span>*</span></label>
+									<input type="country-3" required name="country-3" id="country-3">
+								</div>
+								<div class="login-user__state-province login-user-global-style">
+									<label for="state-province-3">State/Province <span>*</span></label>
+									<input type="state-province-3" required name="state-province-3" id="state-province-3">
+								</div>
+							</div>
+						</div>
+						<div class="address-register__end shipping-methods">
+							<div class="shipping-methods__title">
+								<h2>Shipping Methods</h2>
+							</div>
+							<div class="shipping-methods__radio-shipping-methods radio-shipping-methods">
+								<div class="radio-shipping-methods__wrapper">
+									<div class="radio-shipping-methods__body">
+										<div class="radio-shipping-methods__radio">
+											<input type="radio" name="radio-shipping" value="five-dollars" checked id="radio-shipping-3">
+											<label for="radio-shipping-3">$5.00</label>
+										</div>
+										<div class="radio-shipping-methods__fixed">Fixed</div>
+										<div class="radio-shipping-methods__fixed">Flat Rate</div>
+									</div>
+									<div class="radio-shipping-methods__body">
+										<div class="radio-shipping-methods__radio">
+											<input type="radio" value="ten-dollar-bill" name="radio-shipping" id="radio-shipping-4">
+											<label for="radio-shipping-4">$10.00</label>
+										</div>
+										<div class="radio-shipping-methods__fixed">Table Rate</div>
+										<div class="radio-shipping-methods__fixed">Best Way</div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="address-register__end-body">
+							<button class="button">next</button>
+							<div class="address-register__link">
+								<a href="#!">Back</a>
+							</div>
+
+						</div>
+					</form>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20230320220352"></script>
+</body>
+
+</html>
