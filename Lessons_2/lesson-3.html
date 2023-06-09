@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lessons | 3</title>
+</head>
+<body>
+	<script>
+		"use strict";
+		
+		let product = parseInt(prompt(`Вартість одного товару: `));
+		let quantityGoods = parseInt(prompt(`кількість товару: `));
+		let totalAmount = product * quantityGoods;
+		const PDV = totalAmount * 0.05;
+		document.write(`Вартість одного товару = ${product} грв <br>`);
+		document.write(`кількість товару = ${quantityGoods}<br>`);
+		document.write(`Загальня сума = ${totalAmount} грв <br>`);
+		document.write(`ПДВ = ${PDV} грв`);
+	</script>
+</body>
+</html>

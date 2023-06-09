@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<script>
+		"use strict";
+		// вартість товару 
+		let productPriceCocaCola = parseFloat(prompt(`Введіть вартість кока-коли: `));
+		let numberCocaCola = parseInt(prompt(`Введіть кількість кока-коли: `));
+		let productPriceChissburger = parseFloat(prompt(`Введіть вартість чізбургерів: `));
+		let numberChissburger = parseInt(prompt(`Введіть кількість чізбургерів: `));
+		let productPriceIce = parseFloat(prompt(`Введіть вартість морозива: `));
+		let numberIce = parseInt(prompt(`Введіть кількість морозива: `));
+		let totalPriceCocaCola = productPriceCocaCola * numberCocaCola;
+		let totalPriceChissburger = productPriceChissburger * numberChissburger;
+		let totalPriceIce = productPriceIce * numberIce;
+		document.write(`----------Coca-cola----------- <br> Вартість кока-коли: ${productPriceCocaCola} грв <br> Кількість кока-коли: ${numberCocaCola}x <br> Загальня сума ${totalPriceCocaCola} грв <br> --------------------------------- <br>`);
+		document.write(`----------Chissburger----------- <br> Вартість чізбургерів: ${productPriceChissburger} грв <br> Кількість чізбургерів: ${numberChissburger}x <br> Загальня сума ${totalPriceChissburger} грв <br> ------------------------------- <br>`);
+		document.write(`----------ICE----------- <br> Вартість чізбургерів: ${productPriceIce} грв <br> Кількість чізбургерів: ${numberIce}x <br> Загальня сума ${totalPriceIce} грв <br> ------------------------------- <br>`);
+		let totalAllPrice = totalPriceCocaCola + totalPriceChissburger + totalPriceIce
+		document.write(`Загальня сума всього товару: ${totalAllPrice} Грв`)
+		//  3 товарів
+
+	</script>
+</body>
+
+</html>

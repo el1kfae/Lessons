@@ -1,0 +1,76 @@
+@import url(reset.css);
+
+[class*='__container'] {
+	max-width: 1300px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+.header {
+	background: black;
+	padding: 15px 0;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+
+}
+
+.header__container {}
+
+.header__title {
+	text-align: center;
+	font-size: 50px;
+	color: white;
+}
+
+.page {
+	padding-top: 150px;
+}
+
+.page__container {
+}
+
+.page__lessons {}
+
+.lessons-page {
+	display: gird;
+	grid-template-columns: repeat(3,1fr);
+	gap: 20px;
+}
+
+.lessons-page__lesson {
+	display: flex;
+	flex-direction: column;
+	border: 1px solid red;
+	padding: 15px 15px;
+	gap: 20px;
+	flex: 1 0 100%;
+	
+}
+
+.lessons-page__title {
+	text-align: center;
+	font-size: 40px;
+}
+
+.lessons-page__sub-ttile {
+	font-size: 20px;
+	line-height: 1.333333; /* 20/15 */
+}
+
+.lessons-page__link {
+	background-color: black;
+	text-align: center;
+	padding: 15px 15px;
+	color: white;
+	font-size: 20px;
+	
+}
+.lessons-page__link:hover{
+	text-decoration: underline;
+}
+
+.lessons-page__result {}
+
+.result-page {}
