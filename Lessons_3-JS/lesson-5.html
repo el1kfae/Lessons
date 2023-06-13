@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<script>
+		"use strict";
+		// З клавіатури вводиться назва категорії водія (А-мотоцикл, В-легковий автомобіль, С-вантажний автомобіль). Вивести на екран назву транспортного засобу, яким він може керувати.
+		// ------------START-----------
+		// вивести назву категорії водія: categories
+		// Категорія авто: categoriesCar; 
+		// Категорія мотоцикла: categoriesBike; 
+		// Категорія : categoriesTruck;
+		// -----------END----------------
+
+		let categories = prompt(`Введіть назву категорії водія: \n A - Легковий автомобіль \n B - Мотоцикл \n T - Вантажний автомобіль`);
+		let categoriesCar = `Легковий автомобіль`;
+		let categoriesBike = `Мотоцикл`;
+		let categoriesTruck = `Вантажний автомобіль`;
+		if (categories === 'A' || categories === categoriesCar) {
+			alert(`Ви можете їздити на легковому автомобілю`);
+		}
+		else if (categories === `B` || categories === categoriesBike) {
+			alert(`Ви можете їздити на мотоциклу`);
+		}
+		else if (categories === `T` || categories === categoriesTruck) {
+			alert(`Ви можете їздити на вантажному автомобілю`);
+		}
+		else{
+			alert(`Введіть правильну назву категорії водія`)
+		}
+
+	</script>
+</body>
+
+</html>

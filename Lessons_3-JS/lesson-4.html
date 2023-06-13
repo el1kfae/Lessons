@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lesson | 4</title>
+</head>
+<script>
+	"use strict";
+	// З клавіатури вводиться вік людини. Вивести на екран ким він є (дитиною у садочку, школярем, студентом, працівником, пенсіонером).
+	// вік людини - agePeople
+	let userAge = parseInt(prompt(`Введіть скільки вам років: `));
+	let result;
+	switch (true) {
+		case userAge <= 2: result = `Дитина`;
+			break;
+		case userAge <= 5: result = `Дитина, що ходить в садочок`;
+			break;
+		case userAge <= 16: result = `Школяр`;
+			break;
+		case userAge <= 17: result = `Студент`;
+			break;
+		case userAge <= 23: result = `Працівник`;
+			break;
+		case userAge >= 60: result = `Людина пожилого віку`;
+			break
+		default: result = `Введіть щось коректне`
+			break;
+	}
+	alert(result)
+
+
+
+
+
+</script>
+
+<body>
+</body>
+
+</html>

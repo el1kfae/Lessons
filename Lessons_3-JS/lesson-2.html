@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Lesson | 2</title>
+</head>
+
+<body>
+	<script>
+		"use strict";
+		// З клавіатури вводиться ціна товару і кількість грошей. Якщо грошей не вистачає то відмовляємо у покупці, інакше, якщо ще залишаються гроші, то пропонуємо купити лотерею за 4 грн.
+		// Зчитати вхідні дані з клавіатури: ціну товару і кількість грошей.		
+		let goodsPrice = parseFloat(prompt(`Введіть ціну товару: `));
+		let amountMoney = parseFloat(prompt(`Введіть кількість грошей: `));
+		// Скільки виграв користувач грошей.
+		let minWin = 2;
+		let maxWin = 120;
+		let win = minWin + Math.random() * Math.floor(maxWin - minWin + 1);
+		// скільки каштує лотарейка
+		const lotter = 4;
+		// результат
+		let selfPaid = amountMoney - goodsPrice;
+
+		// Перевірити,	 чи грошей достатньо для покупки товару.
+		if (amountMoney >= goodsPrice) {
+			alert(`Дякую за покупку`);
+			// йде перевірка чи грошей більше чим 4 (lotter)
+			if (selfPaid >= lotter) {
+				if (confirm(`У вас , ще залишилось  ${selfPaid} грв, чи не бажаєте ви купити лотарейку за ${lotter} грв`)) {
+					selfPaid = amountMoney - goodsPrice - lotter;
+					alert(`Ви виграли: ${win.toFixed(2)}`)
+					document.write(`Ціна товара ${goodsPrice}, ви дали ${amountMoney}, ціна за лотарейку ${lotter}, загальня сума ${selfPaid} <br> Ви виграли: ${win.toFixed(2)}(Щоб забрати виіграш підійдіть до каси)`)
+				}
+				else {
+					alert('Дякую за покупку')
+				}
+			}
+		}
+		else {
+			alert(`У вас не вистачає ${selfPaid}`);
+		}
+	</script>
+</body>
+
+</html>

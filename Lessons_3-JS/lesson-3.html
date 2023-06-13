@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lessons | 3</title>
+</head>
+
+<body>
+	<script>
+		"use strict";
+		// Випадковим чином генерується число від 1 до 5. Спробуйте вгадати число за 2 спроби.
+		let five = 5;
+		let one = 1;
+		let oneRandom = one + Math.round(Math.random() * (one + five - 1));  
+		let resultRandomOne = parseInt(prompt(`Перша спроба, введіть від 1 до 5: `));
+		let resultRandomTwo = parseInt(prompt(`Друга спроба, введіть від 1 до 5: `));
+		if (oneRandom === resultRandomOne || oneRandom === resultRandomTwo){
+			alert(`Ви вгадали ваше чило ${oneRandom}`);
+		}
+		else{
+			alert(`Нажль ви не вгадали()`);
+		}
+	</script>
+</body>
+
+</html>

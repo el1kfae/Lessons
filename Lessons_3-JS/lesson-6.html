@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<script>
+		"use strict";
+		// З клавіатури вводиться номер дня тижня. Вивести на екран назву дня.
+		// ------------START-----------
+		// вивести назву категорії номера тижня: numberWeek
+		// -----------END----------------
+		let numberWeek = parseInt(prompt(`Введіть номер тижня: `));
+		let reusltWeek;
+		switch (numberWeek) {
+			case 1: reusltWeek = alert(`Понеділок`);
+				break;
+			case 2: reusltWeek = alert(`Вівторок`);
+				break;
+			case 3: reusltWeek = alert(`Середа`);
+				break;
+			case 4: reusltWeek = alert(`Четверг`);
+				break;
+			case 5: reusltWeek = alert(`п'ятниця`);
+				break;
+			case 6: reusltWeek = alert(`Суббота`);
+				break;
+			case 7: reusltWeek = alert(`Неділя`);
+				break;
+			default: alert(`Введіть коректний номер тижня від 1 до 7: 'Ви ввели ${numberWeek}'`)
+				break;
+		}
+
+	</script>
+</body>
+
+</html>
